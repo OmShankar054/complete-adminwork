@@ -1,0 +1,69 @@
+
+ admin create karna jao
+ users create karega pssword change kar sakta hai
+ type of user panchayat user , distict user
+
+ user creation ke liye form hoga created by user admin
+  
+
+  [10:59 AM] CHIRANJEET CHAKRABORTY
+User Creation
+ 
+A) Sarkar Aap ke Dawar 
+
+	2 types of Users
+
+	a. District User
+
+	b. Panchayat User
+ 
+User Creation - There will be a form to create users by the System Admin ( System Admin is an inbuilt account)
+ 
+Location Hierarchy - District -> Block -> Panchayat
+ 
+User creation form will be common for all users 
+
+1) User ID- user ID can be email address 
+
+2) Name 
+
+3) Designation ( Selection from a drop down, there can be a master list of Designation) 
+
+4) Type of User ( District /Panchayat ) this field will be a dropdown 
+
+5) If District is selected 
+
+	Dropdown of selection of District  ( District ID)
+
+6) If Panchayat is selected 
+
+	a.Show District Dropdown
+
+	b.After selection of District , show block dropdown for all blocks within the District (District ID)
+
+	c. After selection of Block, show panchayat dropdown for all panchayats within the Block  (Block ID)
+
+	d. Select the Panchayat (Panchayat ID)
+ 
+	You can also explore Local Government Directory (LGC) for master data of District, Block, Panchayat etc.
+
+7) Mobile number
+
+8) Password 
+
+9) Finally create user
+
+
+1. login and registration form
+    
+    user creation form
+
+    application form:-
+    
+    name 
+    Mobile
+    address
+    scheme
+    details
+
+

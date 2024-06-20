@@ -1,0 +1,115 @@
+<div class="d-flex justify-content-between flex-wrap flex-md nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2"> <%#  View Users %> <%= user.firstName%> <%= user.lastName %> </h1>
+
+    <div class="btn-toolbar mb-2 mb-md 0">
+      <div class="btn-group me-2">
+        <button type="button" class="btn btn-sm btn-outline-secondary">Share </button>
+    
+      </div>
+    </div>
+
+</div>
+
+<div class="col py-3">
+
+    <div class="row">
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
+            <li class="breadcrumb-item active"><%= user.firstName  %></li>
+          </ol>
+        </nav>
+      </div>
+      <div class="col text-end fw-lighter">
+        <b>Last Updated <%= new Date(user.updatedAt).toUTCString() %> </b>
+        <b>UserId:</b> <%= user._id %>
+      </div>
+    </div>
+  
+  </div>
+
+
+  <%# list show karega all details of the created user %>
+  <ul class="list-group">
+
+    <li class="list-group-item"> 
+      <div class="row">
+        <div class="col" style="max-width: 140px"> <b>Name:</b></div>
+        <div class="col"><%= user.firstName %> <%= user.lastName %></div>
+      </div>
+    </li>
+  
+    <li class="list-group-item"> 
+      <div class="row">
+        <div class="col" style="max-width: 140px"> <b>Tel:</b></div>
+        <div class="col"><%= user.tel %></div>
+      </div>
+    </li>
+  
+    <li class="list-group-item"> 
+      <div class="row">
+        <div class="col" style="max-width: 140px"> <b>Email:</b></div>
+        <div class="col"><%= user.email %></div>
+      </div>
+    </li>
+
+    <li class="list-group-item"> 
+      <div class="row">
+        <div class="col" style="max-width: 140px"> <b>User Type:</b></div>
+        <div class="col"><%= user.usertype %></div>
+      </div>
+    </li>
+
+    <li class="list-group-item"> 
+      <div class="row">
+        <div class="col" style="max-width: 140px"> <b>District:</b></div>
+        <div class="col"><%= user.district %></div>
+      </div>
+    </li>
+ 
+    <li class="list-group-item"> 
+      <div class="row">
+        <div class="col" style="max-width: 140px"> <b>Block:</b></div>
+        <div class="col"><%= user.block %></div>
+      </div>
+    </li>
+
+    <li class="list-group-item"> 
+      <div class="row">
+        <div class="col" style="max-width: 140px"> <b>Panchayat:</b></div>
+        <div class="col"><%= user.panchayat %></div>
+      </div>
+    </li>
+
+    
+    <li class="list-group-item"> 
+      <div class="row">
+        <div class="col" style="max-width: 140px"> <b>Password:</b></div>
+        <div class="col"><%= user.password %></div>
+      </div>
+    </li>
+  
+    <li class="list-group-item"> 
+      <div class="row">
+        <div class="col" style="max-width: 140px"> <b>Details:</b></div>
+        <div class="col"><%= user.details %></div>
+      </div>
+    </li>
+
+
+    <li class="list-group-item"> 
+      <div class="row">
+        <div class="col" style="max-width: 140px"> <b>Date Created:</b></div>
+        <div class="col"><%= user.createdAt %></div>
+      </div>
+    </li>
+  
+    <li class="list-group-item"> 
+      <div class="row">
+        <div class="col" style="max-width: 140px"> <b>Date Modified:</b></div>
+        <div class="col"><%= user.updatedAt %></div>
+      </div>
+    </li>
+  
+  </ul>
